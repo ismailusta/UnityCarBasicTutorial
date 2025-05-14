@@ -1,3 +1,4 @@
+using System.CodeDom.Compiler;
 using System.Collections;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("FocalPoint");
+
     }
 
     // Update is called once per frame

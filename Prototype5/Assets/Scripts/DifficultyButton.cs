@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DifficultyButton : MonoBehaviour
+public class DiffucultyButton : MonoBehaviour
 {
     private GameManager gameManager;
     private Button button;
@@ -12,12 +12,14 @@ public class DifficultyButton : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         button = GetComponent<Button>();
         button.onClick.AddListener(SetDifficulty);
+
     }
-    void SetDifficulty()
+    public void SetDifficulty()
     {
         Debug.Log(gameObject.name + " was clicked");
         gameManager.StartGame(difficulty);
     }
+
     // Update is called once per frame
     void Update()
     {
